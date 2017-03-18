@@ -46,6 +46,7 @@
         <executions>
           <execution>
             <id>attach-javadocs</id>
+            <phase>prepare-package</phase>
             <goals>
               <goal>jar</goal>
             </goals>
@@ -61,7 +62,7 @@
         <executions>
           <execution>
             <id>attach-sources</id>
-            <phase>verify</phase>
+            <phase>prepare-package</phase>
             <goals>
               <goal>jar</goal>
             </goals>
